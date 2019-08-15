@@ -1,0 +1,70 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.24">
+
+
+
+  <PropertyGroup>
+
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
+      <!-- uap10.0.16299 -->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+
+    <None Include="Resources\*.cs" />
+
+    <Compile Remove="Resources\*.cs" />
+
+  </ItemGroup>
+
+
+<!--
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('uap')) ">
+
+    <Compile Include="platforms\uap\**\*.cs" />
+
+    <Compile Include="platforms\common\**\*.cs" />
+
+  </ItemGroup>
+-->
+
+<!--
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+
+    <Compile Include="**\*.shared.cs" />
+
+  </ItemGroup>
+-->
+
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+
+    <Compile Include="**\*.ios.cs" />
+    <Compile Include="**\*.shared.cs" />
+    <Compile Include="platforms\common\**\*.cs" />
+  </ItemGroup>
+
+
+
+  <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+
+
+
+    <Compile Include="**\*.android.cs" />
+    <Compile Include="**\*.shared.cs" />
+    <AndroidResource Include="Resources\**\*.xml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
+
+    <AndroidResource Include="Resources\**\*.axml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
+
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+  </ItemGroup>
+
+
+
+</Project>
