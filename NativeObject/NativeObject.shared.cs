@@ -8,7 +8,8 @@ using Xamarin.Forms.PlatformConfiguration;
 
 namespace Namespace
 {
-    static class NativeObject
+    
+    public static class NativeObject
     {
         // https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/platform-specifics/#consuming-the-platform-specific
         const string EffectName = "NativeObject.NativeObjectEffect";
@@ -86,4 +87,5 @@ namespace Namespace
         }
         
     }
+    
 }
