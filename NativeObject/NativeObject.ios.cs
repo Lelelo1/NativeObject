@@ -12,12 +12,12 @@ namespace Namespace.IOS
     {
         protected override void OnAttached()
         {
-            
+            Console.WriteLine("OnAattached");
         }
 
         protected override void OnDetached()
         {
-            
+            Console.WriteLine("OnDetached");
         }
     }
 }

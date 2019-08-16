@@ -19,17 +19,18 @@ namespace Namespace
 
         static UIKit.UIView GetiOS(BindableObject element)
         {
-            var v = new Android.Widget.Button(null);
-            
+            Console.WriteLine("GetiOS");
             return (UIKit.UIView)element.GetValue(iOSObjectProperty);
         }
         static void SetiOS(BindableObject element, UIKit.UIView uiView)
         {
+            Console.WriteLine("SetiOS");
             element.SetValue(iOSObjectProperty, uiView);
         }
 
         static void OniOSObjectPropertyChanged(BindableObject element, object oldValue, object newValue)
         {
+            Console.WriteLine("iOSObjectProperty changed");
             if(newValue != null)
             {
                 AttachEffect((Element)element);
@@ -57,16 +58,19 @@ namespace Namespace
 
         static void AttachEffect(Element element) // must take Element: https://github.com/xamarin/Xamarin.Forms/blob/master/Xamarin.Forms.Core/Element.cs
         {
+            Console.WriteLine("AttackEffect");
             IElementController controller = element;
             if (controller == null || controller.EffectIsAttached(EffectName))
             {
                 return;
             }
             element.Effects.Add(Effect.Resolve(EffectName));
+            Console.WriteLine("Effect added");
         }
 
         static void DetachEffect(Element element)
         {
+            Console.WriteLine("DetactEffect");
             IElementController controller = element;
             if (controller == null || !controller.EffectIsAttached(EffectName))
             {
@@ -77,6 +81,7 @@ namespace Namespace
             if (toRemove != null)
             {
                 element.Effects.Remove(toRemove);
+                Console.WriteLine("Effect removed");
             }
         }
         

@@ -1,10 +1,10 @@
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\netstandard2.0\NativeObject.deps.json
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\netstandard2.0\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\netstandard2.0\NativeObject.pdb
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.csprojAssemblyReference.cache
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.csproj.CoreCompileInputs.cache
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.AssemblyInfoInputs.cache
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.AssemblyInfo.cs
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.pdb
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.csprojAssemblyReference.cache
