@@ -4,9 +4,22 @@
 
   <PropertyGroup>
 
-    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid81</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
       <!-- uap10.0.16299 -->
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    
+    <AssemblyName>NativeObject</AssemblyName>
+    <RootNamespace>Namespace</RootNamespace>
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0.0</Version>
+    <NeutralLanguage>en</NeutralLanguage>
+
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+
+    <LangVersion>default</LangVersion>
+    
   </PropertyGroup>
 
 
@@ -43,7 +56,6 @@
 
     <Compile Include="**\*.ios.cs" />
     <Compile Include="**\*.shared.cs" />
-    <Compile Include="platforms\common\**\*.cs" />
   </ItemGroup>
 
 
@@ -54,13 +66,21 @@
 
     <Compile Include="**\*.android.cs" />
     <Compile Include="**\*.shared.cs" />
+    <!--
     <AndroidResource Include="Resources\**\*.xml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
 
     <AndroidResource Include="Resources\**\*.axml" SubType="Designer" Generator="MSBuild:UpdateAndroidResources" />
+    -->
 
   </ItemGroup>
 
 
+  <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
   </ItemGroup>

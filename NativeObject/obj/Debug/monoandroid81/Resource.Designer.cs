@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("NativeObject.Resource", IsApplication=false)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Namespace.Resource", IsApplication=false)]
 
-namespace NativeObject
+namespace Namespace
 {
 	
 	

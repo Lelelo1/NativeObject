@@ -2,12 +2,22 @@
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
-[assembly: ResolutionGroupName("Lelelo1")]
-[assembly: ExportEffect(typeof(NativeObject.IOS.NativeObject), "NativeObject")]
-namespace NativeObject.IOS
+[assembly: ResolutionGroupName("NativeObject")]
+[assembly: ExportEffect(typeof(Namespace.IOS.NativeObjectEffect), "NativeObjectEffect")]
+namespace Namespace.IOS
 {
-    class NativeObject
+    class NativeObjectEffect : PlatformEffect
     {
+        protected override void OnAttached()
+        {
+            
+        }
+
+        protected override void OnDetached()
+        {
+            
+        }
     }
 }
