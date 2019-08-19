@@ -1,7 +1,3 @@
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\optimized\
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csproj.CoreCompileInputs.cache
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.AssemblyInfoInputs.cache
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.AssemblyInfo.cs
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\NativeObject.pdb
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\Xamarin.Forms.Core.dll
@@ -42,7 +38,12 @@ C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\vi\Xamar
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\bin\Debug\xamarin.ios10\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\optimized\
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csproj.CoreCompileInputs.cache
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.AssemblyInfoInputs.cache
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.AssemblyInfo.cs
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\XamlC.stamp
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csproj.CopyComplete
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.pdb
+C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csprojAssemblyReference.cache
