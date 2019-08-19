@@ -21,6 +21,7 @@
 <!-- The 'FilterAssemblies' tas was not given a value for the required parameter 'DesignTimeBuild'-->
   <PropertyGroup Label="Android DesignTimeBuild error workaround">
     <DesignTimeBuild>false</DesignTimeBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   
 <!--
