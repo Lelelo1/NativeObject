@@ -17,12 +17,14 @@ namespace FormsTestProject
         public MainPage()
         {
             InitializeComponent();
-            DependencyService.Get<ITest>().Test(label);
+            DependencyService.Get<ITest>().Test(label1);
+            DependencyService.Get<ITest>().Test(button0);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Console.WriteLine("effect iz: " + label.Effects[0]);
+            DependencyService.Get<ITest>().Test(label2);
+            DependencyService.Get<ITest>().Test(button1);
         }
     }
 }

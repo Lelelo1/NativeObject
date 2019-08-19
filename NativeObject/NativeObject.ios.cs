@@ -49,8 +49,6 @@ namespace Namespace.IOS
             }
             else
             {
-                Console.WriteLine("else");
-
                 var asyncEventListener = new AsyncEventListener(() =>
                 {
                     Console.WriteLine("Loaded event " + LoadedControl + " and  " + Control);

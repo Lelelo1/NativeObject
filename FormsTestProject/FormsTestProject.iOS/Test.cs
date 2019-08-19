@@ -7,20 +7,29 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Namespace;
+using CoreGraphics;
+
 [assembly: Dependency(typeof(FormsTestProject.iOS.Test))]
 namespace FormsTestProject.iOS
 {
 
     public class Test : ITest
     {
-        async void ITest.Test(Element element)
+        async void ITest.Test(Label element)
         {
-            Console.WriteLine("Test ");
-            var label = (Label)element;
-            var uiLabel = await label.On<Xamarin.Forms.PlatformConfiguration.iOS>().Get();
+            var uiLabel = (UILabel) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().Get();
+            uiLabel.Text = "Changed Label via UILabel";
+            CoreGraphics.CGSize cgSize = new CoreGraphics.CGSize();
+            uiLabel.ShadowColor = UIColor.Blue;
+            uiLabel.Layer.ShadowOffset = new CGSize(5, 5);
+            uiLabel.Layer.ShadowOpacity = 1.0f;
 
-            // uiLabel.Text = "Changed the uilabel at runtime";
-            Console.WriteLine("Test uiLabel: " + uiLabel);
+        }
+        async void ITest.Test(Button element)
+        {
+            var uiButton = (UIButton) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().Get();
+            uiButton.SetTitle("changed Button via UIButton", UIControlState.Normal);
+
         }
     }
 }

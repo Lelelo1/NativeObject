@@ -65,7 +65,7 @@ namespace Namespace
             return (Controller)b.GetValue(iOSControllerProperty);
         }
         
-        public static Task<UIKit.UIView> Get(this IPlatformElementConfiguration<iOS, Label> config)
+        public static Task<UIKit.UIView> Get(this IPlatformElementConfiguration<iOS, VisualElement> config)
         {
             var controller = GetController(config.Element);
             Console.WriteLine("Got controller number: " + controller.GetNumber());

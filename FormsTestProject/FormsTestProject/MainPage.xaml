@@ -8,9 +8,17 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label x:Name="label" Text="Welcome to Xamarin.Forms!" 
+        <Label x:Name="label0" Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Label x:Name="label1" Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Label x:Name="label2" Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        <Button Text="button0" x:Name="button0"/>
+        <Button Text="button1" x:Name="button1"/>
         <Button Text="Test" Clicked="Button_Clicked"/>
     </StackLayout>
 
