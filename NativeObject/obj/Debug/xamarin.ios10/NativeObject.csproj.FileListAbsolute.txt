@@ -46,4 +46,3 @@ C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\XamlC.st
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csproj.CopyComplete
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.pdb
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\xamarin.ios10\NativeObject.csprojAssemblyReference.cache

@@ -7,4 +7,3 @@ C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeO
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.dll
 C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.pdb
-C:\Users\Leo\Projects\NativeObject\NativeObject\obj\Debug\netstandard2.0\NativeObject.csprojAssemblyReference.cache

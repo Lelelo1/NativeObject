@@ -6,7 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Xamarin.Forms;
+using Namespace;
 namespace FormsTestProject.Droid
 {
     [Activity(Label = "FormsTestProject", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -18,7 +19,10 @@ namespace FormsTestProject.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
-
+            var label = new Xamarin.Forms.Label();
+            // await label.On<Xamarin.Forms.PlatformConfiguration.Android>().AndroidAsync()
+            // Xamarin.Forms.View view = (Xamarin.Forms.View)label; // indeed no ´On´ 
+            
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

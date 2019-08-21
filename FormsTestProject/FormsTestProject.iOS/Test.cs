@@ -17,7 +17,7 @@ namespace FormsTestProject.iOS
     {
         async void ITest.Test(Label element)
         {
-            var uiLabel = (UILabel) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().Get();
+            var uiLabel = (UILabel) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().iOSAsync();
             uiLabel.Text = "Changed Label via UILabel";
             CoreGraphics.CGSize cgSize = new CoreGraphics.CGSize();
             uiLabel.ShadowColor = UIColor.Blue;
@@ -25,11 +25,29 @@ namespace FormsTestProject.iOS
             uiLabel.Layer.ShadowOpacity = 1.0f;
 
         }
+
+
+
         async void ITest.Test(Button element)
         {
-            var uiButton = (UIButton) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().Get();
+            var uiButton = (UIButton) await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().iOSAsync();
             uiButton.SetTitle("changed Button via UIButton", UIControlState.Normal);
 
+        }
+
+        /* Control property of PlatformEffect remains null when using layout and page */
+        async void ITest.Test(StackLayout element)
+        {
+            var ui = await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().iOSAsync();
+            Console.WriteLine("ui: " + ui);
+            ui.BackgroundColor = UIColor.Brown;
+
+        }
+
+        async void ITest.Test(Page element)
+        {
+            var p = await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().iOSAsync();
+            Console.WriteLine("p iz: " + p);
         }
     }
 }

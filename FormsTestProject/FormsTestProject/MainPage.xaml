@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="FormsTestProject.MainPage">
 
-    <StackLayout>
+    <StackLayout x:Name="stackLayout">
         <!-- Place new controls here -->
         <Label x:Name="label0" Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"

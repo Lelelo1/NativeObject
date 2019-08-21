@@ -19,12 +19,25 @@ namespace FormsTestProject
             InitializeComponent();
             DependencyService.Get<ITest>().Test(label1);
             DependencyService.Get<ITest>().Test(button0);
+            
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            /*
             DependencyService.Get<ITest>().Test(label2);
             DependencyService.Get<ITest>().Test(button1);
+            */
+
+
+
+            DependencyService.Get<ITest>().Test(stackLayout);
+            stackLayout.BackgroundColor = Color.AliceBlue;
+            
+            /* Control remains null
+            DependencyService.Get<ITest>().Test((Page) this);
+            this.BackgroundColor = Color.AliceBlue;
+            */
         }
     }
 }

@@ -99,6 +99,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\NativeObject\NativeObject.csproj">
+      <Project>{6fca1069-1032-4442-bd39-48da4eaa6e3c}</Project>
+      <Name>NativeObject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FormsTestProject\FormsTestProject.csproj">
       <Project>{B34A3932-C6E9-4E81-9264-6BDBC593107E}</Project>
       <Name>FormsTestProject</Name>

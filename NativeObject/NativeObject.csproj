@@ -9,19 +9,20 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   
     <Authors>Lelelo1</Authors>
-    <Description>Access the native control at runtime from any given Xamarin.Forms control/layout</Description>
+    <Description>Access the native instance at runtime from any Xamarin.Forms Control or Layout . Downcast the UIKit.UIView received from iOSAsync on iOS and the Android.Views.View received from AndroidAsync on Android  to it's specific native instances and change them.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Lelelo1/NativeObject</PackageProjectUrl>
     <PackageTags>Platform, Custom Renderer, Platform-Specific, Effect, Xamarin.Forms</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Can access the UIKit.View and Android.Views.View behind any Control and Layout.</PackageReleaseNotes>
 
   </PropertyGroup>
   
 <!-- The 'FilterAssemblies' tas was not given a value for the required parameter 'DesignTimeBuild'-->
   <PropertyGroup Label="Android DesignTimeBuild error workaround">
     <DesignTimeBuild>false</DesignTimeBuild>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
   
 <!--
