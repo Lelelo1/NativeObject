@@ -35,7 +35,7 @@ namespace FormsTestProject.iOS
 
         }
 
-        /* Control property of PlatformEffect remains null when using layout and page */
+
         async void ITest.Test(StackLayout element)
         {
             var ui = await element.On<Xamarin.Forms.PlatformConfiguration.iOS>().iOSAsync();
