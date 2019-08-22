@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-
+[assembly: ResolutionGroupName("Namespace")]
+[assembly: ExportEffect(typeof(Namespace.Droid.NativeObjectEffect), "NativeObjectEffect")]
 namespace Namespace.Droid
 {
     public class NativeObjectEffect : PlatformEffect
@@ -46,11 +47,13 @@ namespace Namespace.Droid
 
         public async void Set(TaskCompletionSource<Android.Views.View> onLoaded)
         {
-
-            if (Control != null)
+            if (Element is Layout && Container != null)
+            {
+                onLoaded.SetResult(Container);
+            }
+            else if (Control != null)
             {
                 onLoaded.SetResult(Control);
-
             }
             else
             {
@@ -61,6 +64,7 @@ namespace Namespace.Droid
                     Console.WriteLine("taskcomsource: " + onLoaded);
                     */
                     onLoaded.SetResult(LoadedControl);
+
                     // Console.WriteLine("after set taskcomsource: " + onLoaded);
                 });
                 Loaded += asyncEventListener.Listen;

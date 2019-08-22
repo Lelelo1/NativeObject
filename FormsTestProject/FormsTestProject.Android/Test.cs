@@ -25,7 +25,7 @@ namespace FormsTestProject.Droid
 
         async void ITest.Test(Xamarin.Forms.Button element)
         {
-            var androidButton = (Android.Widget.Button) await element.On<Xamarin.Forms.PlatformConfiguration.Android>().AndroidAsync());
+            var androidButton = (Android.Widget.Button) await element.On<Xamarin.Forms.PlatformConfiguration.Android>().AndroidAsync();
             androidButton.Text = "I was changed nativly";
             androidButton.SetBackgroundColor(Android.Graphics.Color.Bisque);
 

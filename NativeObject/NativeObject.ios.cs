@@ -56,10 +56,13 @@ namespace Namespace.iOS
 
         public async void Set(TaskCompletionSource<UIKit.UIView> onLoaded)
         {
-            if (Control != null)
+            if(Element is Layout && Container != null)
+            {
+                onLoaded.SetResult(Container);
+            }
+            else if(Control != null)
             {
                 onLoaded.SetResult(Control);
-
             }
             else
             {
