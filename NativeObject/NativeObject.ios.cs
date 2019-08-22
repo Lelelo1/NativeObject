@@ -45,6 +45,7 @@ namespace Namespace.iOS
             if (Container != null && LoadedControl == null)
             {
                 LoadedControl = Container;
+                // Console.WriteLine("OnElementPropertyChanged set LoadedControl to " + LoadedControl + " from Container " + Container);
                 Loaded.Invoke();
             }
 

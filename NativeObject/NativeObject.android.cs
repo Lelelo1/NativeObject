@@ -28,7 +28,7 @@ namespace Namespace.Droid
             if (Control != null && LoadedControl == null)
             {
                 LoadedControl = Control;
-               //  Console.WriteLine("OnElementPropertyChanged set LoadedControl to " + LoadedControl + " from Control " + Control);
+                // Console.WriteLine("OnElementPropertyChanged set LoadedControl to " + LoadedControl + " from Control " + Control);
                 Loaded.Invoke();
             }
 
@@ -36,6 +36,7 @@ namespace Namespace.Droid
             if (Container != null && LoadedControl == null)
             {
                 LoadedControl = Container;
+                // Console.WriteLine("OnElementPropertyChanged set LoadedControl to " + LoadedControl + " from Cotainer " + Container);
                 Loaded.Invoke();
             }
 
@@ -49,23 +50,19 @@ namespace Namespace.Droid
         {
             if (Element is Layout && Container != null)
             {
+                // Console.WriteLine(Element + " is layout. returning " + Container);
                 onLoaded.SetResult(Container);
             }
             else if (Control != null)
             {
+                // Console.WriteLine("Assuming " + Element + " is Control returning: " + Control);
                 onLoaded.SetResult(Control);
             }
             else
             {
                 var asyncEventListener = new AsyncEventListener(() =>
                 {
-                    /*
-                    Console.WriteLine("Loaded event " + LoadedControl + " and  " + Control);
-                    Console.WriteLine("taskcomsource: " + onLoaded);
-                    */
                     onLoaded.SetResult(LoadedControl);
-
-                    // Console.WriteLine("after set taskcomsource: " + onLoaded);
                 });
                 Loaded += asyncEventListener.Listen;
 
