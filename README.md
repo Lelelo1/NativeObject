@@ -2,5 +2,5 @@
 
 https://github.com/Lelelo1/NativeObject/issues/1
 
-*Notice*
+*Notice*:
 Changing the native instances at runtime comes with a slight delay duing initlialization
